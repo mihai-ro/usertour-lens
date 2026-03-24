@@ -9,6 +9,13 @@
 
 Writing CSS selectors requires technical knowledge. Most Usertour creators don't know how to write selectors — they either guess, guess wrong, or reach out to a developer for help. This extension lets you visually pick any element on the page without leaving the Usertour builder interface.
 
+## Demo
+
+<video width="800" height="450" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 - **Smart selectors** — Prioritizes test attributes (data-testid, data-cy), clean IDs, semantic attributes, and ARIA labels
