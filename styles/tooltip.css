@@ -1,0 +1,43 @@
+#__ln_tooltip__ {
+  display: none;
+  position: absolute;
+  z-index: 2147483646;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #0f0f13;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1;
+  color: #e2e2e2;
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  max-width: 440px;
+  overflow: hidden;
+}
+
+.__ln_tt__ {
+  color: #818cf8;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.__ln_ts__ {
+  color: #e2e8f0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.__ln_tb__ {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}

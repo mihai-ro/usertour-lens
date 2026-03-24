@@ -1,0 +1,35 @@
+export default [
+  {
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        browser: true,
+        chrome: true,
+        console: true,
+        document: true,
+        Event: true,
+        MutationObserver: true,
+        Node: true,
+        requestAnimationFrame: true,
+        setTimeout: true,
+        WeakRef: true,
+        window: true,
+        CustomEvent: true,
+        HTMLInputElement: true,
+        XPathResult: true,
+        URL: true,
+        history: true,
+        location: true,
+        navigator: true,
+        scrollY: true,
+        innerWidth: true,
+        Element: true,
+      },
+    },
+    rules: {
+      'no-unused-vars': 'off',
+      'no-undef': 'off',
+    },
+  },
+];

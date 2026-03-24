@@ -1,0 +1,490 @@
+/* Container */
+
+#__ln_panel__ {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  width: 330px;
+  background: #0f0f13;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(85, 51, 255, 0.18);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  color: #e2e2e2;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Header */
+
+.__ln_ph__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: rgba(85, 51, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.__ln_logo__ {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #b4a0ff;
+  letter-spacing: -0.01em;
+}
+
+.__ln_logo_text__ {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.__ln_logo_sub__ {
+  font-size: 9px;
+  font-weight: 500;
+  color: #4b5563;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.__ln_pbtns__ {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Header buttons */
+
+.__ln_tbtn__ {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.__ln_tbtn__:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.__ln_tbtn__:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.__ln_on__ {
+  background: rgba(85, 51, 255, 0.2) !important;
+  border-color: rgba(85, 51, 255, 0.5) !important;
+  color: #b4a0ff !important;
+}
+
+.__ln_ibtn__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.__ln_ibtn__:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e2e2;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Body */
+
+.__ln_pb__ {
+  padding: 14px;
+}
+
+.__ln_empty__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 0;
+  color: #4b5563;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.__ln_res__ {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.__ln_meta__ {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Tag + confidence badges */
+
+.__ln_tp__ {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: #9b8aff;
+  background: rgba(85, 51, 255, 0.12);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.__ln_cp__ {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.__ln_ch__ {
+  background: rgba(74, 222, 128, 0.12);
+  color: #4ade80;
+}
+
+.__ln_cm__ {
+  background: rgba(250, 204, 21, 0.12);
+  color: #facc15;
+}
+
+.__ln_cl__ {
+  background: rgba(248, 113, 113, 0.12);
+  color: #f87171;
+}
+
+/* Format toggle */
+
+.__ln_fmt__ {
+  display: flex;
+  gap: 4px;
+}
+
+.__ln_fmtbtn__ {
+  flex: 1;
+  padding: 3px 0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: #6b7280;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.__ln_fmtbtn__:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+}
+
+.__ln_fmtact__ {
+  background: rgba(85, 51, 255, 0.18) !important;
+  border-color: rgba(85, 51, 255, 0.4) !important;
+  color: #b4a0ff !important;
+}
+
+/* Selector row */
+
+.__ln_row__ {
+  display: flex;
+  gap: 6px;
+}
+
+.__ln_inp__ {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 11.5px;
+  color: #e2e8f0;
+  outline: none;
+  cursor: text;
+}
+
+.__ln_inp__:focus {
+  border-color: rgba(85, 51, 255, 0.5);
+}
+
+.__ln_cpy__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  background: rgba(85, 51, 255, 0.15);
+  border: 1px solid rgba(85, 51, 255, 0.3);
+  border-radius: 6px;
+  color: #b4a0ff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.__ln_cpy__:hover {
+  background: rgba(85, 51, 255, 0.28);
+}
+
+/* Match count */
+
+.__ln_count__ {
+  font-size: 11px;
+  font-weight: 600;
+  min-height: 16px;
+}
+
+.__ln_count_ok__ {
+  color: #4ade80;
+}
+
+.__ln_count_warn__ {
+  color: #facc15;
+}
+
+.__ln_count_err__ {
+  color: #f87171;
+}
+
+/* Why */
+
+.__ln_why__ {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Actions row */
+
+.__ln_actions__ {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* History navigation */
+
+.__ln_hist__ {
+  display: flex;
+  gap: 3px;
+  margin-right: auto;
+}
+
+.__ln_histbtn__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.__ln_histbtn__:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e2e2;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.__ln_histbtn__:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Hosts section */
+
+.__ln_phdivider__ {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.07);
+  margin: 0;
+}
+
+.__ln_phosts__ {
+  padding-bottom: 10px;
+}
+
+.__ln_phhdr__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 6px;
+}
+
+.__ln_phhdr_lbl__ {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4b5563;
+}
+
+.__ln_hempty__ {
+  padding: 6px 14px;
+  font-size: 11px;
+  color: #4b5563;
+}
+
+.__ln_hrow__ {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+  border-radius: 0;
+}
+
+.__ln_hrow__:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.__ln_hactive__ .__ln_hdot__ {
+  background: #4ade80;
+  box-shadow: 0 0 4px #4ade80;
+}
+
+.__ln_hdot__ {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.__ln_hname__ {
+  flex: 1;
+  font-size: 12px;
+  color: #d1d5db;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.__ln_hactive__ .__ln_hname__ {
+  color: #b4a0ff;
+  font-weight: 600;
+}
+
+.__ln_hbtns__ {
+  display: flex;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.__ln_hrow__:hover .__ln_hbtns__ {
+  opacity: 1;
+}
+
+.__ln_hform__ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 14px 4px;
+}
+
+.__ln_hf_input__ {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  color: #e2e8f0;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.__ln_hf_input__:focus {
+  border-color: rgba(85, 51, 255, 0.5);
+}
+
+.__ln_hf_input__::placeholder {
+  color: #4b5563;
+}
+
+.__ln_hf_btns__ {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+/* Reset + Confirm buttons */
+
+.__ln_rst__ {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.__ln_rst__:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #9ca3af;
+}
+
+.__ln_confirm__ {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(74, 222, 128, 0.15);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #4ade80;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.__ln_confirm__:hover {
+  background: rgba(74, 222, 128, 0.28);
+}

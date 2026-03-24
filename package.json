@@ -1,0 +1,20 @@
+{
+  "name": "usertour-lens",
+  "version": "1.0.0",
+  "description": "Pick any element on a page and instantly get its CSS selector. Built for Usertour creators who want to visually select elements without writing selectors manually.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node tests/run.js",
+    "package": "rm -rf dist && mkdir dist && zip -r dist/usertour-lens.zip . -x 'node_modules/*' 'tests/*' '.git/*' '.github/*' '*.md' '.gitignore' 'eslint.config.mjs' '.prettierrc' 'package.json' 'package-lock.json' 'vitest.config.mjs'"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0",
+    "sharp": "^0.34.1"
+  }
+}

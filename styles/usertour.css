@@ -1,0 +1,20 @@
+#__ln_pick_btn__ {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background: rgba(85, 51, 255, 0.12);
+  border: 1px solid rgba(85, 51, 255, 0.35);
+  border-radius: 6px;
+  color: #5533ff;
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+#__ln_pick_btn__:hover {
+  background: rgba(85, 51, 255, 0.22);
+}

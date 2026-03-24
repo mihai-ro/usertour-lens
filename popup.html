@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 200px;
+        padding: 14px;
+        background: #0f0f13;
+        color: #e2e2e2;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 13px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .icon-wrap {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        background: rgba(99, 102, 241, 0.15);
+        border: 1px solid rgba(99, 102, 241, 0.35);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title-block {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .title {
+        font-size: 15px;
+        font-weight: 800;
+        color: #e2e8f0;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      .subtitle {
+        font-size: 10px;
+        color: light-dark(#4b5563, #fff);
+        line-height: 1;
+      }
+
+      .desc {
+        font-size: 11px;
+        color: #6b7280;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 8px 12px;
+        background: rgba(99, 102, 241, 0.2);
+        border: 1px solid rgba(99, 102, 241, 0.4);
+        border-radius: 7px;
+        color: #a5b4fc;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+      }
+
+      .btn:hover {
+        background: rgba(99, 102, 241, 0.35);
+      }
+
+      .hint {
+        margin-top: 8px;
+        font-size: 10px;
+        color: light-dark(#374151, #fff);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="icon-wrap">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#a5b4fc"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <circle cx="12" cy="12" r="8" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      </div>
+      <div class="title-block">
+        <span class="title">Usertour Lens</span>
+        <span class="subtitle">by mihairo</span>
+      </div>
+    </div>
+
+    <p class="desc">
+      Point at anything on a page and instantly get its selector.
+    </p>
+
+    <button class="btn" id="btn">
+      <svg
+        width="13"
+        height="13"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      >
+        <circle cx="12" cy="12" r="8" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+      Toggle Lens
+    </button>
+
+    <p class="hint">Works on the currently active tab</p>
+
+    <script src="popup.js" defer></script>
+  </body>
+</html>
